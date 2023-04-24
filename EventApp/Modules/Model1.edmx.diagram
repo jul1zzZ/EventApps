@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f94ed67e05c94ba7a409caf2ac67c2a6" Name="Diagram1">
+        <EntityTypeShape EntityType="EventModel.Employee" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.Order" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.Place" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.Post" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.Review" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.Role" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.Service" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.Status" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.sysdiagram" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.User" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EventModel.UserOrder" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="EventModel.FK_Employee_Post1" ManuallyRouted="false" />
+        <AssociationConnector Association="EventModel.FK_Order_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="EventModel.FK_Order_UserOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="EventModel.FK_UserOrder_Place" ManuallyRouted="false" />
+        <AssociationConnector Association="EventModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="EventModel.FK_UserOrder_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="EventModel.FK_UserOrder_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="EventModel.FK_UserOrder_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
