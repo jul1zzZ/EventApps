@@ -19,6 +19,11 @@ namespace EventApp.Modules
             : base("name=EventEntities")
         {
         }
+    
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            throw new UnintentionalCodeFirstException();
+        }
 
         private static EventEntities _cxt;
         public static EventEntities GetContext()
@@ -29,11 +34,8 @@ namespace EventApp.Modules
             }
             return _cxt;
         }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            throw new UnintentionalCodeFirstException();
-        }
-    
+
+
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Place> Places { get; set; }

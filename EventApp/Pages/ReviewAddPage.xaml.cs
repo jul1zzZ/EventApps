@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -71,6 +72,31 @@ namespace EventApp.Pages
             if (c >= '0' && c <= '5')
                 return true;
             return false;
+        }
+
+
+        public bool isCyrillic(string textInput)
+        {
+            bool rezultat = true;
+            string pattern = @"[абвгдѓежзѕијклљмнњопрстќуфхцчџш]";
+            char[] textArray = textInput.ToCharArray();
+            for (int i = 0; i < textArray.Length; i++)
+            {
+                if (!Regex.IsMatch(textArray[i].ToString(), pattern))
+                {
+                    rezultat = false;
+                    break;
+                }
+            }
+            return rezultat;
+        }
+
+        private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

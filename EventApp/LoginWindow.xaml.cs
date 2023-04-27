@@ -36,6 +36,9 @@ namespace EventApp
                 AuthStorage.IsAuth = true;
                 AuthStorage.UserID = auth.UserID;
                 AuthStorage.RoleID = auth.RoleID;
+                AuthStorage.Name = auth.Name;
+                AuthStorage.Surname = auth.Surname;
+                AuthStorage.Patronymic = auth.Patronymic;
                         MainWindow mainUser = new MainWindow();
                         mainUser.Show();
                         this.Close();
@@ -50,6 +53,13 @@ namespace EventApp
             {
                 MessageBox.Show(ex.Message.ToString());
             }
+        }
+
+        private void RegBtn_Click(object sender, RoutedEventArgs e)
+        {
+            RegWindow regWindow = new RegWindow();
+            regWindow.Show();
+            this.Close();
         }
     }
 }

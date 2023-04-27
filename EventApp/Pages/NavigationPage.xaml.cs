@@ -70,5 +70,10 @@ namespace EventApp.Pages
         {
             NavigationService.Navigate(new Pages.ReviewPage());
         }
+
+        private void LkBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.PersonalOfficePage());
+        }
     }
 }

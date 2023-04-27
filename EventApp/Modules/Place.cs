@@ -21,6 +21,7 @@ namespace EventApp.Modules
             this.UserOrders = new HashSet<UserOrder>();
         }
 
+
         public string GetPhoto
         {
             get
@@ -28,7 +29,6 @@ namespace EventApp.Modules
                 return $@"{Directory.GetCurrentDirectory()}\Images\{Photo}";
             }
         }
-
 
         public int PlaceID { get; set; }
         public string City { get; set; }

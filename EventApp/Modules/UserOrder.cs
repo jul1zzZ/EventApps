@@ -28,6 +28,26 @@ namespace EventApp.Modules
             }
         }
 
+        public string GetColor
+        {
+            get
+            {
+                if (StatusID == 1)
+                {
+                    return "#e89607";
+                }
+                else if (StatusID == 2)
+                {
+                    return "#07e82c";
+                }
+                else if (StatusID == 3)
+                {
+                    return "#e82107";
+                }
+                return "";
+            }
+        }
+
         public int UOrderID { get; set; }
         public int UserID { get; set; }
         public int ServiceID { get; set; }

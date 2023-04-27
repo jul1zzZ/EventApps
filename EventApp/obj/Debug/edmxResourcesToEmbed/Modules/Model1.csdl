@@ -12,6 +12,7 @@
     <Property Name="PostID" Type="Int32" Nullable="false" />
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Photo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Post" Relationship="Self.FK_Employee_Post1" FromRole="Employee" ToRole="Post" />
     <NavigationProperty Name="Orders" Relationship="Self.FK_Order_Employee" FromRole="Employee" ToRole="Order" />
   </EntityType>

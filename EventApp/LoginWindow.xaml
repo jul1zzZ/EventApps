@@ -27,7 +27,8 @@
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="LoginTb" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Style="{StaticResource MaterialDesignTextBox}" materialDesign:HintAssist.Hint="Введите Email"  Foreground="#2b5179" materialDesign:HintAssist.Foreground="#2b5179"/>
         <PasswordBox Grid.Row="2" Grid.Column="1" x:Name="PassPb" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Style="{StaticResource MaterialDesignRevealPasswordBox}" materialDesign:HintAssist.Hint="Введите Пароль" Foreground="#2b5179" materialDesign:HintAssist.Foreground="#2b5179"/>
         <Border Width="400" Background="White" Grid.ColumnSpan="2" Opacity="0.5" CornerRadius="10" Grid.Row="3"/>
-        <Button Click="LoginBtn_Click" x:Name="LoginBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2" Content="Sign in" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
+        <Button Click="LoginBtn_Click" x:Name="LoginBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Content="Sign in" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
+        <Button Click="RegBtn_Click" x:Name="RegBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3" Content="Registration" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
         
     </Grid>
 </Window>

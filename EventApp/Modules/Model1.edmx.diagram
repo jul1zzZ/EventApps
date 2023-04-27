@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f94ed67e05c94ba7a409caf2ac67c2a6" Name="Diagram1">
-        <EntityTypeShape EntityType="EventModel.Employee" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+      <Diagram DiagramId="ec1934522f3c47aaaa3ff4c005e8ac0e" Name="Diagram1">
+        <EntityTypeShape EntityType="EventModel.Employee" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
         <EntityTypeShape EntityType="EventModel.Order" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
         <EntityTypeShape EntityType="EventModel.Place" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
         <EntityTypeShape EntityType="EventModel.Post" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />

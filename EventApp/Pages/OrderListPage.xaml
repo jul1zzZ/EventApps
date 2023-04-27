@@ -21,11 +21,11 @@
                 <DataGridTemplateColumn Header="Дата заказа">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock x:Name="DateOrd" Text="{Binding UserOrder.OrderDate,StringFormat=d}" />
+                            <TextBlock x:Name="DateOrd" Text="{Binding UserOrder.OrderDate,StringFormat=dd.MM.yyyy}" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Дата исполнения" Binding="{Binding UserOrder.OrgDate,StringFormat=d}"/>
+                <DataGridTextColumn Header="Дата исполнения" Binding="{Binding UserOrder.OrgDate,StringFormat=dd.MM.yyyy}"/>
                 <DataGridTextColumn Header="Залог" Binding="{Binding UserOrder.Deposit}"/>
                 <DataGridTextColumn Header="Полная стоимость" Binding="{Binding UserOrder.TotalPrice}"/>
                 <DataGridTextColumn Header="Организатор" Binding="{Binding Employee.Surname}"/>

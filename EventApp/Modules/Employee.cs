@@ -11,6 +11,7 @@ namespace EventApp.Modules
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
     
     public partial class Employee
     {
@@ -19,7 +20,7 @@ namespace EventApp.Modules
         {
             this.Orders = new HashSet<Order>();
         }
-    
+
         public string GetFullName
         {
             get
@@ -27,6 +28,15 @@ namespace EventApp.Modules
                 return Surname + " " + Name + " " + Patronymic;
             }
         }
+
+        public string GetPhoto
+        {
+            get
+            {
+                return $@"{Directory.GetCurrentDirectory()}\Employee\{Photo}";
+            }
+        }
+
         public int EmployeeID { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }
@@ -35,6 +45,7 @@ namespace EventApp.Modules
         public int PostID { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public string Photo { get; set; }
     
         public virtual Post Post { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

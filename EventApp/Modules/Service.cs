@@ -21,7 +21,6 @@ namespace EventApp.Modules
             this.UserOrders = new HashSet<UserOrder>();
         }
 
-
         public string GetInfo
         {
             get

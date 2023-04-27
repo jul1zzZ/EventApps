@@ -10,16 +10,17 @@
        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" >
 
     <Grid>
-        <Border VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400" Background="White" CornerRadius="30">
+        <Border VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="440" Background="White" CornerRadius="30">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="200" Color="Black"/>
             </Border.Effect>
         </Border>
-        <StackPanel x:Name="NvSp" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Width="350" Margin="0 0 0 0" Height="350">
+        <StackPanel x:Name="NvSp" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Width="350" Margin="0 0 0 0" Height="400">
             <Button x:Name="PlaceBtn" Content="Места проведения мероприятий" Width="250" Margin=" 0 16 0 0" Click="PlaceBtn_Click"  Background="#79abe0"  BorderBrush="Transparent" />
             <Button x:Name="EventBtn" Content="Мероприятия" Width="250" Margin="0 16 0 0" Click="EventBtn_Click" Background="#79abe0"  BorderBrush="Transparent"/>
             <Button x:Name="ReviewBtn" Content="Отзывы" Width="250" Margin=" 0 16 0 0 " Click="ReviewBtn_Click" Background="#79abe0"  BorderBrush="Transparent"/>
             <Button x:Name="CreateBtn" Content="Сформировать заказ" Width="250" Margin="0 16 0 0" Click="CreateBtn_Click" Background="#79abe0"  BorderBrush="Transparent" />
+            <Button x:Name="LkBtn" Content="Личный кабинет" Width="250" Margin="0 16 0 0" Click="LkBtn_Click" Background="#79abe0"  BorderBrush="Transparent" />
             <Button x:Name="OrderBtn" Content="Заказы" Width="250" Margin="0 16 0 0" Click="OrderBtn_Click" Background="#79abe0"  BorderBrush="Transparent"/>
             <Button x:Name="ClientBtn" Content="Клиенты" Width="250" Margin=" 0 16 0 0 " Click="ClientBtn_Click" Background="#79abe0"  BorderBrush="Transparent"/>
             <Button x:Name="EMployeeBtn" Content="Сотрудники" Width="250" Margin=" 0 16 0 0 " Click="EMployeeBtn_Click" Background="#79abe0"  BorderBrush="Transparent"/>
