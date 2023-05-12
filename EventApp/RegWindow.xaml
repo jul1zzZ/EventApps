@@ -28,11 +28,11 @@
         <Border Width="800" Background="White" Grid.ColumnSpan="2" Opacity="0.5" CornerRadius="10" Grid.Row="0"/>
         <TextBlock Text="Registration"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="40" FontFamily="Beyond The Mountains" Margin="4 0 0 0" FontWeight="Heavy" Foreground="#3381d4"/>
         <TextBlock Text="Registration"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="40" FontFamily="Beyond The Mountains" FontWeight="Heavy" Foreground="#79abe0"/>
-        <TextBlock Text="Surname"  Grid.Row="1" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
-        <TextBlock Text="Name"  Grid.Row="2" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
-        <TextBlock Text="Patronymic"  Grid.Row="3" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
-        <TextBlock Text="Email"  Grid.Row="4" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
-        <TextBlock Text="Phone"  Grid.Row="5" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
+        <TextBlock Text="Фамилия"  Grid.Row="1" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
+        <TextBlock Text="Имя"  Grid.Row="2" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
+        <TextBlock Text="Отчество"  Grid.Row="3" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
+        <TextBlock Text="Электронная почта"  Grid.Row="4" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
+        <TextBlock Text="Номер телефона"  Grid.Row="5" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
         <TextBox Grid.Row="1" PreviewTextInput="TextBox_PreviewTextInput" Grid.Column="1" Text="{Binding Surname}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Style="{StaticResource MaterialDesignTextBox}" materialDesign:HintAssist.Hint="Введите фамилию" Foreground="#2b5179" materialDesign:HintAssist.Foreground="#2b5179"/>
         <TextBox Grid.Row="2" x:Name="PartTb" PreviewTextInput="PartTb_PreviewTextInput" Grid.Column="1" Text="{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Style="{StaticResource MaterialDesignTextBox}" materialDesign:HintAssist.Hint="Введите имя" Foreground="#2b5179" materialDesign:HintAssist.Foreground="#2b5179"/>
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="PrtTb" PreviewTextInput="PrtTb_PreviewTextInput" Text="{Binding Patronymic}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Style="{StaticResource MaterialDesignTextBox}" materialDesign:HintAssist.Hint="Введите отчетсво" Foreground="#2b5179" materialDesign:HintAssist.Foreground="#2b5179"/>
@@ -44,6 +44,6 @@
         <xctk:MaskedTextBox Grid.Row="5" Grid.Column="1" Mask="+7(999) 999-9999" VerticalAlignment="Center" BorderBrush="Transparent" HorizontalAlignment="Center" Width="150" Background="Transparent" Text="{Binding PhoneNumber}"/>
         <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Email}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Style="{StaticResource MaterialDesignTextBox}" materialDesign:HintAssist.Hint="Введите Email"  Foreground="#2b5179" materialDesign:HintAssist.Foreground="#2b5179"/>
         <Border Width="800" Background="White" Grid.ColumnSpan="2" Opacity="0.5" CornerRadius="10" Grid.Row="6"/>
-        <Button Click="RegBtn_Click" x:Name="RegBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="6" Content="Registration" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
+        <Button Click="RegBtn_Click" x:Name="RegBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="6" Content="Регистрация" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
     </Grid>
 </Window>

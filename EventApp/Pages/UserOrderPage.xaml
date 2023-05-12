@@ -15,7 +15,6 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -23,12 +22,10 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Мероприятие" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0"/>
         <TextBlock Text="Дата заказа" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
-        <TextBlock Text="Дата организации" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2"/>
-        <TextBlock Text="Место проведения" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3"/>
+        <TextBlock Text="Место проведения" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2"/>
         <Button Background="#79abe0"  BorderBrush="Transparent" x:Name="SaveBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="6" Grid.ColumnSpan="2" Click="SaveBtn_Click" Content="Отправить на рассмотрение"/>
         <ComboBox x:Name="EventCb" SelectedItem="{Binding Service}" DisplayMemberPath="GetInfo" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="300"/>
-        <DatePicker x:Name="OrderCl" FirstDayOfWeek="Monday" Grid.Row="1" Grid.Column="1" Width="300" Height="225" SelectedDate="{Binding OrderDate}" SelectedDateFormat="Short"/>
-        <DatePicker x:Name="OrgCl" FirstDayOfWeek="Monday" Grid.Row="2" Grid.Column="1" Width="300" Height="225" SelectedDate="{Binding OrgDate}" SelectedDateFormat="Short"/>
-        <ComboBox  x:Name="PlaceCb" SelectedItem="{Binding Place}" DisplayMemberPath="Description" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Width="300"/>
+        <DatePicker x:Name="OrgCl" FirstDayOfWeek="Monday" Grid.Row="1" Grid.Column="1" Width="300" Height="225" SelectedDate="{Binding OrgDate}" SelectedDateFormat="Short"/>
+        <ComboBox  x:Name="PlaceCb" SelectedItem="{Binding Place}" DisplayMemberPath="Description" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Width="300"/>
     </Grid>
 </Page>

@@ -18,7 +18,7 @@
         <Border VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2" Width="1920" Height="80" Background="White" CornerRadius="10" Opacity="0.5"/>
         <TextBlock Text="Art Event" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Beyond The Mountains" Margin="4 0 0 0" FontSize="51" FontWeight="Heavy" Foreground="#3381d4" />
         <TextBlock Text="Art Event" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Beyond The Mountains" FontSize="50" FontWeight="Heavy" Foreground="#79abe0" />
-        <Button Click="BackBtn_Click" x:Name="BackBtn" Grid.Row="2" Content="Back" VerticalAlignment="Center" HorizontalAlignment="Right" Width="80" Height="25" Margin="16 0" Background="#79abe0" Foreground="#f7b4b3" FontWeight="Heavy" BorderBrush="Transparent" BorderThickness="0.5" FontFamily="Beyond The Mountains"/>
+        <Button Click="BackBtn_Click" x:Name="BackBtn" Grid.Row="2" Content="Назад" VerticalAlignment="Center" HorizontalAlignment="Right" Width="80" Height="25" Margin="16 0" Background="#79abe0" Foreground="#f7b4b3" FontWeight="Heavy" BorderBrush="Transparent" BorderThickness="0.5" FontFamily="Beyond The Mountains"/>
         <Frame Grid.Row="1" x:Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

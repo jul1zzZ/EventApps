@@ -22,13 +22,13 @@
         <Border Width="400" Background="White" Grid.ColumnSpan="2" Opacity="0.5" CornerRadius="10" Grid.Row="0"/>
         <TextBlock Text="Authorization"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="40" FontFamily="Beyond The Mountains" Margin="4 0 0 0" FontWeight="Heavy" Foreground="#3381d4"/>
         <TextBlock Text="Authorization"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="40" FontFamily="Beyond The Mountains" FontWeight="Heavy" Foreground="#79abe0"/>
-        <TextBlock Text="Email"  Grid.Row="1" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
-        <TextBlock Text="Password"  Grid.Row="2" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
+        <TextBlock Text="Логин"  Grid.Row="1" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
+        <TextBlock Text="Пароль"  Grid.Row="2" FontFamily="Beyond The Mountains" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#2b5179"/>
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="LoginTb" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Style="{StaticResource MaterialDesignTextBox}" materialDesign:HintAssist.Hint="Введите Email"  Foreground="#2b5179" materialDesign:HintAssist.Foreground="#2b5179"/>
         <PasswordBox Grid.Row="2" Grid.Column="1" x:Name="PassPb" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Style="{StaticResource MaterialDesignRevealPasswordBox}" materialDesign:HintAssist.Hint="Введите Пароль" Foreground="#2b5179" materialDesign:HintAssist.Foreground="#2b5179"/>
         <Border Width="400" Background="White" Grid.ColumnSpan="2" Opacity="0.5" CornerRadius="10" Grid.Row="3"/>
-        <Button Click="LoginBtn_Click" x:Name="LoginBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Content="Sign in" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
-        <Button Click="RegBtn_Click" x:Name="RegBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3" Content="Registration" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
+        <Button Click="LoginBtn_Click" x:Name="LoginBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Content="Войти" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
+        <Button Click="RegBtn_Click" x:Name="RegBtn" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3" Content="Регистрация" Background="#79abe0" Foreground="White" FontFamily="Beyond The Mountains" BorderBrush="Transparent"/>
         
     </Grid>
 </Window>

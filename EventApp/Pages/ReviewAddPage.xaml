@@ -21,7 +21,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock Text="Ваше имя" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Grid.Row="0"/>
-        <TextBlock Text="Комменатрий" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Grid.Row="1"/>
+        <TextBlock Text="Комментарий" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Grid.Row="1"/>
         <TextBlock Text="Рейтинг" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Grid.Row="2"/>
         <Button Background="#79abe0"  BorderBrush="Transparent" x:Name="SaveBtn" Click="SaveBtn_Click" Grid.Row="3" Grid.ColumnSpan="2" Content="Оставить отзыв" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
